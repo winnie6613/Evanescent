@@ -19,41 +19,53 @@
             white-space: pre-wrap;
             /* auto change line */
         }
-        .word{
-            font-family: 'Dancing Script', cursive;
-        }
-        
-        .outfitpic:hover{
-            filter: brightness(50%) blur(3px);
-        }
-        
-        .imgpre{
-            display: none;
-            top: 0;
-            left: 0;
-            width: 100%; /*容器佔滿整個螢幕*/
-            height: 100%;
-            position: fixed;
-            background: rgba(0, 0, 0, 0.5);
-        }
-        .imgpre img {
-            z-index: 100;
-            width: 60%;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-        
-        .back{
-            background-color: #ffffff99;
-            padding: 50px;
-        }
-    
         .allimg{
             width: 100%;
             z-index: 2;
         }
+        .allimg2{
+            width: 30%;
+            height:100%;
+            z-index: 2;
+        }
+        .otherimg{
+            width: 70%;
+            height:80%;
+            z-index: 2;
+        }
+        .wholeword{
+            width: 100%;
+            height:100%;
+            z-index: 2;
+        }
+        .singleword{
+            width: 60%;
+            height:100%;
+            z-index: 2;
+        }
+        .word{
+            font-family: 'Dancing Script', cursive;
+        }
+        .back{
+            background-color: #ffffff99;
+            padding: 4%;
+        }
+        .bor{
+            border-width: 2px;
+            border-color: #BBB1A8;
+            border-style: solid;
+        }
+        .leftbor{
+            border-left-width: 3px;
+            border-left-color: #BBB1A8;
+            border-left-style: solid;
+        }
+        .topbor{
+            border-top-width: 3px;
+            border-top-color: #BBB1A8;
+            border-top-style: solid;
+        }
+        
     </style>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand" style=" background-color:#c6af96">
@@ -117,72 +129,121 @@
             <div id="layoutSidenav_content" style=" background-color:#E4E2DC">
                 <main>
                     
-                    <div style=" padding-left: 200px; padding-right: 200px;">
+                    <div style=" padding-left: 15%; padding-right: 15%;">
                         <div class="back text-center">
-                            <h1 class="allword word" style="padding-bottom: 40px">Simple</h1>
-                            <div class="row  justify-content-center">
+                            <h1 class="allword word" style="padding-bottom: 4%">Simple</h1>
+                            <div class="row  justify-content-center align-items-center">
                                 <div class="col-md-5 text-center ">
                                     <img class="allimg " src="photos/coat1.jpg">
-                                    
                                 </div>
                                 <div class="column col-md-5 text-center">
-                                    <div style="height: 50px; margin-bottom: 50px "><a class="allword" style="font-size: 50px">wwww</a></div>
+                                    <div style=" margin-bottom: 10%">
+                                        <span>wwww</span>
+                                    </div>
                                     <div>
-                                        <span class="allword">這世界 有個千年不變道理 
-                                        
-那就是 耶穌愛你 在世上 沒有任何的逼迫患難 
-                                        
-能使我們與神的愛隔絕 你是否 
-                                        
-願意同為神的兒女 一生讓 耶穌愛你 
-                                        
-在世上 沒有任何的困苦愁煩 能使我們與神的愛隔絕
+                                        <span class="allword">看似平淡的黑色
+                                            
+仔細觀察會發現它隱含的棕色調
+                                            
+是件保暖好搭配的西裝外套
                                         </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="back" style="margin-top: 50px">
-                            <h1 >Outfit</h1>
-                            <div class="row container">
-                                <div class="col-md-5 text-center">
-                                    <img class="allimg imgpre" src="photos/test.jpg">
-                                    <a>outfit 1</a>
+                        <div class="back" style="margin-top: 10%">
+                            <h1 class="text-center word" style="background-color: #DBD2C9">Outfit</h1>
+                            <div class="row ">
+                                <div class="col-md-6 text-center">
+                                    <img class="allimg" src="photos/test.jpg">
+                                    
                                 </div>
-                                <div class="col-md-3 text-center">
-                                    <span class="allword">介紹</span>
-                                </div>
+                                <div class="col-md-6 text-center column leftbor" >
+                                    <div class="row align-items-center" style="height: 15%; padding: 2.5%">
+                                        <span class="text-center" style="font-size: 110%;">一日高中生穿搭</span>
+                                    </div>
+                                    <div class="row" style="height: 20%; padding: 2.5%">
+                                        <img class="allimg2" src="photos/square_coat11.jpg" >
+                                            <span class="singleword">品名
+                                            </span>
+                                    </div>
+                                        <div class="row" style="height: 20%; padding: 2.5%">
+                                        <img class="allimg2" src="photos/square_coat11.jpg" >
+                                            <span class="singleword">品名
+                                            </span>
+                                    </div>
+                                    <div class="row" style="height: 20%; padding: 2.5%">
+                                        <img class="allimg2" src="photos/square_coat11.jpg" >
+                                            <span class="singleword">品名
+                                            </span>
+                                    </div>
+                                    <div class="row" style="height:20%; padding: 2.5%">
+                                        <img class="allimg2" src="photos/square_coat11.jpg" >
+                                            <span class="singleword">品名
+                                            </span>
+                                    </div>
+                                </div>             
                             </div>
-                            <div class="row container">
-                                <div class="col-md-3 text-center">
-                                    <img class="allimg " src="photos/test.jpg">
-                                    <a>outfit 2</a>
-                                </div>
-                                <div class="col-md-3 text-center">
-                                    <span class="allword">介紹</span>
-                                </div>
+                            <div class="row align-items-center" style="padding-top: 2%; padding-bottom: 3%">
+                                <div class="col-md-6 text-center">
+                                <span class="allword">一日高中生穿搭:
+ 高中生冬天必備的帽T
+搭配上厚磅質感外套
+      再加上學院感覺的百摺裙      
+</span>                         </div>
+                                <div class="col-md-6 text-center">
+                                    <img class="otherimg" src="photos/test.jpg">
+                                </div>                         
                             </div>
-                            <div class="row container">
-                                <div class="col-md-3 text-center">
-                                    <img class="allimg " src="photos/test.jpg">
-                                    <a>outfit 3</a>
+                            
+                            <div class="topbor" style="padding-bottom: 2.5%"></div>
+                            
+                            <div class="row ">
+                                <div class="col-md-6 text-center">
+                                    <img class="allimg" src="photos/test.jpg">
+                                    
                                 </div>
-                                <div class="col-md-3 text-center">
-                                    <span class="allword">介紹</span>
-                                </div>
+                                <div class="col-md-6 text-center column leftbor" >
+                                    <div class="row align-items-center" style="height: 15%; padding: 2.5%">
+                                        <span class="text-center" style="font-size: 18px;">其他穿搭</span>
+                                    </div>
+                                    <div class="row" style="height: 20%; padding: 2.5%">
+                                        <img class="allimg2" src="photos/square_coat11.jpg" >
+                                            <span class="singleword ">品名
+                                            </span>
+                                    </div>
+                                        <div class="row" style="height: 20%; padding: 2.5%">
+                                        <img class="allimg2" src="photos/square_coat11.jpg" >
+                                            <span class="singleword">品名
+                                            </span>
+                                    </div>
+                                    <div class="row" style="height: 20%; padding: 2.5%">
+                                        <img class="allimg2" src="photos/square_coat11.jpg" >
+                                            <span class="singleword">品名
+                                            </span>
+                                    </div>
+                                    <div class="row" style="height:20%; padding: 2.5%">
+                                        <img class="allimg2" src="photos/square_coat11.jpg" >
+                                            <span class="singleword">品名
+                                            </span>
+                                    </div>
+                                </div>             
                             </div>
-                            <div class="row container">
-                                <div class="col-md-3 text-center">
-                                    <img class="allimg " src="photos/test.jpg">
-                                    <a>outfit 4</a>
-                                </div>
-                                <div class="col-md-3 text-center">
-                                    <span class="allword">介紹</span>
-                                </div>
+                            <div class="row align-items-center" style="padding-top: 2%; padding-bottom: 3%">
+                                <div class="col-md-6 text-center">
+                                <span class="allword">其他穿搭想法:
+可將內裡換成黑色高領毛衣
+下半身換成黑色小喇叭褲
+搭上點簡單配飾
+會瞬間變成酷帥的風
+</span>                         </div>
+                                <div class="col-md-6 text-center">
+                                    <img class="otherimg" src="photos/test.jpg">
+                                </div>                         
                             </div>
+                            
                         </div>
-                        
                     </div>
                 </main>
             </div>

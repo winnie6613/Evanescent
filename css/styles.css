@@ -10,6 +10,49 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+
+
+/* our css */
+.word{
+         font-family: 'Comfortaa', cursive;
+    }
+
+/* css of index */
+.bg{        
+        background-color: #E4E2DC ;
+        background-image: url(../main1.jpg) ,url(../main2.jpg);
+        background-position: center top,center top;
+        background-repeat: no-repeat,repeat; 
+        background-size: contain;
+    }
+
+/* css of link */
+.link{
+        text-decoration: none ;
+        color: black;
+    }
+.link:hover{
+        color: #6b451e;
+    }
+
+/* css of link */
+.linkimg{
+        width: 100%;
+    }
+.linkimg:hover{
+        filter: brightness(0.8);
+    }
+.bottombor{
+        border-bottom-width: 3px;
+        border-bottom-color: #BBB1A8;
+        border-bottom-style: solid;
+    }
+
+/* our css */
+
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

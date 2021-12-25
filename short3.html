@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Short</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/lib/w3.css">
+
+    </head>
+    
+    <style>
+        .allimg2{
+            width: 30%;
+            height:100%;
+        }
+    </style>
+    
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand" style=" background-color:#c6af96">
+            
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!" style="color: #6b451e"><i class="fas fa-bars"></i></button>
+            
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html" style="color: #6b451e">Evanescent</a>
+            
+            <!-- top space-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            </form>
+            
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu" style="background-color: #846D5A">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">ABOUT</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                About us
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Clothes</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapse_clothes_top" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                top
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapse_clothes_top" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="shirt.html">shirts</a>
+                                    <a class="nav-link" href="long.html">long sleeves</a>
+                                    <a class="nav-link" href="short.html">short sleeves</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapse_pants" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                bottom
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <div class="collapse" id="collapse_pants" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                            <a class="nav-link" href="skirt.html">skirt</a>
+                                            <a class="nav-link" href="pant.html">pants</a>
+                                    </div>
+                                </nav>
+                            <a class="nav-link" href="coat.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                coats
+                                <div class="sb-sidenav-collapse-arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
+            
+            <div id="layoutSidenav_content" style=" background-color:#E4E2DC">
+                <main>
+                    
+                    <div style=" padding-left: 15%; padding-right: 15%;">
+                        <div class="back text-center">
+                            <h1 class="allword" style="padding-bottom: 4%">假兩件式黑色Ｔ</h1>
+                            <div class="row  justify-content-center align-items-center">
+                                <div class="col-md-5 text-center ">
+                                    <div class="content" style="width: 100%">
+                                      <img class="mySlides" src="photos/short31.jpg" style="width:100%">
+                                      <img class="mySlides" src="photos/short32.jpg" style="width:100%">
+                                      <img class="mySlides" src="photos/short33.jpg" style="width:100%">
+                                    </div>
+
+                                    <div class="center">
+                                      <div class="section">
+                                        <button class="btn" onclick="plusDivs(-1)" style="">❮</button>
+                                        <button class="btn" onclick="plusDivs(1)">❯</button>
+                                      </div>
+                                    </div>
+                                </div>
+                                
+                                    <script>
+                                    var slideIndex = 1;
+                                    showDivs(slideIndex);
+
+                                    function plusDivs(n) {
+                                      showDivs(slideIndex += n);
+                                    }
+
+                                    function currentDiv(n) {
+                                      showDivs(slideIndex = n);
+                                    }
+
+                                    function showDivs(n) {
+                                      var i;
+                                      var x = document.getElementsByClassName("mySlides");
+                                      var dots = document.getElementsByClassName("demo");
+                                      if (n > x.length) {slideIndex = 1}    
+                                      if (n < 1) {slideIndex = x.length} ;
+                                      for (i = 0; i < x.length; i++) {
+                                         x[i].style.display = "none";  
+                                      }
+                                      for (i = 0; i < dots.length; i++) {
+                                         dots[i].className = dots[i].className.replace(" w3-red","");
+                                      }
+                                      x[slideIndex-1].style.display = "block";  
+                                      dots[slideIndex-1].className += " w3-red";
+                                    }
+                                    </script>
+                                
+                                <div class="column col-md-5 text-center">
+                                    <div style=" margin-bottom: 0%">
+                                    </div>
+                                    <div>
+                                        <span class="allword">看似普通的oversize黑色Ｔ 帶點領子的小巧思 
+給人學生氣質感
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="back" style="margin-top: 10%">
+                            <h1 class="text-center word2" style="background-color: #DBD2C9">Outfit</h1>
+                            
+                            <div class="row" style="padding-top: 2.5%">
+                                <div class="col-md-6 text-center">
+                                    <img class="allimg" src="photos/style17_1.jpg">
+                                    
+                                </div>
+                                <div class="col-md-6 text-center column leftbor" style="padding-left: 5%;padding-right: 5% " >
+                                    <div class="row align-items-center" style="height: 15%; padding: 2.5%">
+                                        <span class="text-center" style="font-size: 110%;">學生日常搭配</span>
+                                    </div>
+                                    <a class="click link" href="shirt3.html">
+                                        <div class="row" style="height: 20%; padding: 2.5%">
+                                        <img class="allimg2" src="photos/skirt31.jpg" >
+                                        <div class="col align-self-center">    
+                                            <span>高腰鐵灰色Ａ字裙</span>
+                                        </div>
+                                        </div>
+                                    </a>
+                                    <a class="click link" href="skirt5.html">
+                                        <div class="row" style="height: 20%; padding: 2.5%">
+                                        <img class="allimg2" src="photos/skirt51.jpg" >
+                                        <div class="col align-self-center">    
+                                            <span>高腰扣子短裙</span>
+                                        </div>
+                                        </div>
+                                    </a>
+                                    <a class="click link" href="shirt6.html">
+                                        <div class="row" style="height: 20%; padding: 2.5%">
+                                        <img class="allimg2" src="photos/skirt62.jpg" >
+                                        <div class="col align-self-center">    
+                                            <span>黃藍格子設計感Ａ字裙</span>
+                                        </div>
+                                        </div>
+                                    </a>
+                                </div>             
+                            </div>
+                            <div class="row align-items-center" style="padding-top: 5%; padding-bottom: 3%">
+                                <div class="col-md-4 text-center bor" style="padding-bottom: 3%;padding-top: 3%;margin-left: auto;margin-right: auto">
+                                <span class="allword text-center">上半身穿著
+假兩件式黑色Ｔ
+下半身穿著黑色裙子
+各式短群都可
+搭配上白色長襪跟1970帆布鞋
+手提帆布袋
+整體給人學生日常感
+</span>                         </div>
+                                <div class="col-md-6 text-center">
+                                    
+                                    <div class="rwd_slider_container_wrapper">
+                                        <div class="rwd_slider_container">
+                                            <div class="slider_container" >
+                                            <div>
+                                            <img class="otherimg" src="photos/style17_1.jpg" alt="pure css slider" />
+                                            </div>
+                                            <div>
+                                            <img class="otherimg" src="photos/style17_2.jpg" alt="pure css slider"/>
+                                            </div>
+                                        </div><!-- end of .pure_slider_container -->
+                                      </div><!-- end of .embed-responsive -->
+                                    </div><!-- end of .embed-responsive-box -->
+                                    
+                                </div>                         
+                            </div>
+                            
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>
